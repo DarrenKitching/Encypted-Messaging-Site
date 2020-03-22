@@ -13,6 +13,5 @@ def encrypt(publicKeyString, content):
 def decrypt(privateKeyString, crypticContent):
     privateKey = RSA.import_key(privateKeyString)
     decryptor = PKCS1_OAEP.new(key=privateKey)
-    #print("Can decrypt? " + str(decryptor.can_decrypt()))
     content = decryptor.decrypt(crypticContent)
     return content

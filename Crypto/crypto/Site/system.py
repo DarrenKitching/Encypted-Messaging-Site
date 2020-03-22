@@ -52,8 +52,6 @@ def createGroup(groupName):
     publicKey = privateKey.publickey()
     privateKeyString = privateKey.export_key().decode()
     publicKeyString = publicKey.export_key().decode()
-    test = encrypt(publicKeyString, "hello world".encode())
-    output = decrypt(privateKeyString, test)
     group = Group(groupName=groupName, publicKey=publicKeyString, privateKey=privateKeyString)
     group.save()
 

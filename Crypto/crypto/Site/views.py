@@ -69,6 +69,8 @@ def post(request):
     message = request.GET['message']
     postGroup = request.GET['postGroup']
     control = models.Control.objects.all()
+    control[0].messageCounter += 1
+    control[0].save()
     counter = control[0].messageCounter
     system.postMessage(message.encode(), counter, postGroup, request.session['name'])
     return HttpResponseRedirect('messages')
