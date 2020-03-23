@@ -35,7 +35,6 @@ def home(request):
     userList = []
     for group in allmygroups:
         if group.username == request.session['name']:
-            print(group.groupName)
             mygroups.append(group.groupName)
     for group in allExistingGroups:
         allGroups.append(group.groupName)
@@ -68,10 +67,10 @@ def submitcreate(request):
 def post(request):
     message = request.GET['message']
     postGroup = request.GET['postGroup']
-    control = models.Control.objects.all()
-    control[0].messageCounter += 1
-    control[0].save()
-    counter = control[0].messageCounter
+    control = models.Control.objects.all()[0]
+    control.messageCounter = control.messageCounter + 1
+    control.save()
+    counter = control.messageCounter
     system.postMessage(message.encode(), counter, postGroup, request.session['name'])
     return HttpResponseRedirect('messages')
 
@@ -100,6 +99,11 @@ def delete(request):
     groupName = request.GET['deleteGroup']
     system.deleteGroup(groupName)
     return HttpResponseRedirect('home')
+
+
+def deletemessage(request, messagenumber):
+    system.deleteMessage(messagenumber)
+    return HttpResponseRedirect('/messages')
 
 
 def messages(request):

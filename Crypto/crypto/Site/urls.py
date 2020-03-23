@@ -14,5 +14,6 @@ urlpatterns = [
     path('remove', views.remove, name='remove'),
     path('create', views.create, name='create'),
     path('delete', views.delete, name='delete'),
+    path('deletemessage/<int:messagenumber>', views.deletemessage, name='deletemessage'),
     path('messages', views.messages, name='messages'),
 ]

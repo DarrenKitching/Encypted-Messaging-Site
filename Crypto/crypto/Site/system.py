@@ -73,3 +73,8 @@ def postMessage(content, messageNumber, groupName, poster):
     crypticContent = encrypt(publicKeyString, content)
     message = Message(content=crypticContent, messageNumber=messageNumber, groupName=groupName, poster=poster)
     message.save()
+
+
+def deleteMessage(messageNumber):
+    message = Message.objects.get(messageNumber=messageNumber)
+    message.delete()

@@ -7,7 +7,8 @@
     {% for message in allMessages %}
     <label>Group: {{ message.groupName }}</label><br>
     <label>Post by: {{ message.poster }}</label><br>
-    <textarea id={{ message.messageNumber }} rows="10" cols="50">{{ message.content }}</textarea><br><br>
+    <textarea id={{ message.messageNumber }} rows="10" cols="50">{{ message.content }}</textarea><br>
+    <a href="/deletemessage/{{ message.messageNumber }}"><button>Delete Message</button></a><br><br>
     {% endfor %}
 </body>
 </html>
