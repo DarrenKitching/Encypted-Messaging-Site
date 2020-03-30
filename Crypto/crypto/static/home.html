@@ -33,12 +33,12 @@
     <form action="/add">
         <select name="addUser" id="addUser">
             {% for user in users %}
-            <option value={{ user }}>{{ user }}</option>
+            <option value="{{ user }}">{{ user }}</option>
             {% endfor %}
         </select>
         <select name="addGroup" id="addGroup">
             {% for group in allGroups %}
-            <option value={{ group }}>{{ group }}</option>
+            <option value="{{ group }}">{{ group }}</option>
             {% endfor %}
         </select>
         <button type="submit">Add</button>
@@ -48,12 +48,12 @@
     <form action="/remove">
         <select name="removeUser" id="removeUser">
             {% for user in users %}
-            <option value={{ user }}>{{ user }}</option>
+            <option value="{{ user }}">{{ user }}</option>
             {% endfor %}
         </select>
         <select name="removeGroup" id="removeGroup">
             {% for group in allGroups %}
-            <option value={{ group }}>{{ group }}</option>
+            <option value="{{ group }}">{{ group }}</option>
             {% endfor %}
         </select>
         <button type="submit">Remove</button>

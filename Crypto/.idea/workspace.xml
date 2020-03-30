@@ -4,10 +4,8 @@
     <list default="true" id="52d23c62-be15-43c5-9051-de6d81d28a27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crypto/Site/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/Site/system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto/Site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/Site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto/Site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/Site/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crypto/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto/static/messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/static/messages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/static/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/static/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +119,11 @@
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584881872552" />
     <state x="2381" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584564614864" />
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584980475678">
+    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585245939472">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584706637893" />
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584980475678" />
+    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585245939472" />
     <state x="708" y="361" key="search.everywhere.popup" timestamp="1584551509331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -24,6 +24,8 @@ def checkCredentials(name, password):
 
 
 def addUserFromGroup(user, group):
+    print(user)
+    print(group)
     groupMembers = GroupMember.objects.all()
     for membership in groupMembers:
         if membership.username == user and membership.groupName == group:
